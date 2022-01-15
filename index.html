@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update();">Next</button>
+           <!-- Debug the above code to create a button with onclick functionality as given below-->
+            <!-- <button onclick="update();">Next</button>  -->
+          
+        </center>
+
+        <script>
+            
+var reasons = [
+  "Me","Pet", "Mom and Dad", "Grandparents", "Uncle and Aunt"
+];
+var names = [
+ "https://is2-ssl.mzstatic.com/image/thumb/Purple126/v4/ca/f7/11/caf7119a-f571-ec1c-f32d-7e16047491e8/source/512x512bb.jpg",
+
+  "https://i.pinimg.com/originals/d6/2e/da/d62eda7f3ee947217093eca14d98ae37.jpg",
+
+  "https://us.123rf.com/450wm/yupiramos/yupiramos1904/yupiramos190418715/123390809-young-couple-avatars-characters-vector-illustration-design.jpg?ver=6", 
+   
+  "https://thumbs.dreamstime.com/b/senior-indian-man-woman-couple-stands-together-old-couple-stands-together-elderly-indian-woman-sari-holds-her-husband-arm-121745781.jpg", 
+  "https://st2.depositphotos.com/4216129/11944/v/380/depositphotos_119448118-stock-illustration-couple-in-korean-national-clothes.jpg?forcejpeg=true"
+];
+
+var i = 0;
+function nextslide() {  document.getElementById("reasontext").innerHTML = reasons[i];
+  document.getElementById("album").src = names[i];
+  i++;
+  document.getElementById("audio").play();
+ 
+}
+        </script>
+    </body>
+</html>
